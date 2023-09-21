@@ -27,7 +27,8 @@
     window.DD_RUM.startSessionReplayRecording();
   })
 </script>
-
+<script src="./rawScript.js"></script>
+<script src="./script.min.js"></script>
 </head>
 
 <body>
@@ -38,6 +39,38 @@
     <button id="getAPIData">get response from placeholder API</button>
     <br><br>
     <div id="result"></div>
+    <br><br>
+    <h2>Raw Errors</h2>
+
+<button type="button" onclick="ReferenceError()">ReferenceError</button>
+<button type="button" onclick="TypeError()">TypeError</button>
+<button type="button" onclick="RangeError()">RangeError</button>
+<button type="button" onclick="URIError()">URIError</button>
+<button type="button" onclick="EvalError()">EvalError</button>
+<button type="button" onclick="RecursionError()">RecursionError</button>
+<button type="button" onclick="AggregateErrors()">AggregateError</button>
+<button type="button" onclick="AggregateErrorsWithMsg()">AggregateErrorWithMessage</button>
+<button type="button" onclick="UserDefinedError()">UserDefinedError</button>
+<button type="button" onclick="GenerateUnhandledPromiseRejection()">UnhandledPromiseRejection</button>
+<!-- <button type="button" onclick="fun()">fun</button> -->
+
+<br>
+
+<h2>Minfied Errors</h2>
+
+<button type="button" onclick="minReferenceError()">ReferenceError</button>
+<button type="button" onclick="minTypeError()">TypeError</button>
+<button type="button" onclick="minRangeError()">RangeError</button>
+<button type="button" onclick="minURIError()">URIError</button>
+<button type="button" onclick="minEvalError()">EvalError</button>
+<button type="button" onclick="minRecursionError()">RecursionError</button>
+<button type="button" onclick="minAggregateErrors()">AggregateError</button>
+<button type="button" onclick="minAggregateErrorsWithMsg()">AggregateErrorWithMessage</button>
+<button type="button" onclick="minUserDefinedError()">UserDefinedError</button>
+<button type="button" onclick="minGenerateUnhandledPromiseRejection()">UnhandledPromiseRejection</button>
+
+<br>
+
     <script>
 
         document.getElementById('getData').addEventListener('click', async () => {
