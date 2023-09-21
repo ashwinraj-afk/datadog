@@ -8,21 +8,19 @@
     h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
     d=o.createElement(u);d.async=1;d.src=n
     n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-  })(window,document,'script','https://www.datadoghq-browser-agent.com/eu1/v4/datadog-rum.js','DD_RUM')
+  })(window,document,'script','https://www.datadoghq-browser-agent.com/us5/v4/datadog-rum.js','DD_RUM')
   window.DD_RUM.onReady(function() {
     window.DD_RUM.init({
-      clientToken: 'pub63acfc4a3a134c7751f01e43f0f43ed9',
-      applicationId: '401b27f0-9095-4ec7-a4e2-5b12714b77be',
-      site: 'datadoghq.eu',
-      service: 'demo-rum',
+      clientToken: 'pub66129ff690956781d46ec50e58831369',
+      applicationId: '9a77e750-b6c2-4a13-92ce-354e3586749d',
+      site: 'us5.datadoghq.com',
+      service: 'sample-rum',
       env: '<ENV_NAME>',
       // Specify a version number to identify the deployed version of your application in Datadog 
       // version: '1.0.0', 
       sessionSampleRate: 100,
-      sessionReplaySampleRate: 20,
+      premiumSampleRate: 100,
       trackUserInteractions: true,
-      trackResources: true,
-      trackLongTasks: true,
       defaultPrivacyLevel: 'mask-user-input',
     });
 
